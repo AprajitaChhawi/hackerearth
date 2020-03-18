@@ -1,0 +1,31 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+class A {
+    public void prime(int x)
+    {
+        int j;
+        int f=0;
+        for(j=2;j<=Math.sqrt(x);j++)
+        {
+            if(x%j==0)
+            f++;
+        }
+        if(f==0)
+        System.out.print(x+" ");
+    }
+    public static void main(String args[] ) throws Exception {
+        
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        A a=new A();
+        int i;
+        int n = Integer.parseInt(br.readLine());
+        for(i=2;i<=n;i++)
+        {
+            a.prime(i);
+        }
+        
+
+       
+    }
+}
