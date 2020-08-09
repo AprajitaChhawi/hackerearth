@@ -1,0 +1,24 @@
+import java.io.*;
+
+import java.lang.*;
+
+class a
+{
+
+public static void main(String args[])throws Exception
+
+{
+BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+int t,f,a=0,b=7;
+t=Integer.parseInt(br.readLine());
+while(t!=42)
+{
+System.out.println(t);
+t=Integer.parseInt(br.readLine());
+}}}
+
+
+
+
+
+

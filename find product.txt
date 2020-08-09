@@ -1,0 +1,18 @@
+import java.util.*;
+class Main
+{
+public static void main(String args[])
+{
+int i,t,b=0;
+double prod=1;
+Scanner sc=new Scanner(System.in);
+t=sc.nextInt();
+long[] a=new long[t];
+for(i=0;i<t;i++)
+{
+a[i]=sc.nextLong();
+prod=(prod*a[i])%(Math.pow(10,9)+7);
+b=(int)prod;
+}
+System.out.println(b);
+}}

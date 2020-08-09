@@ -1,0 +1,23 @@
+import java.util.*;
+class Main
+{
+public static void main(String args[])
+{
+int l,w,h,t;
+Scanner sc=new Scanner(System.in);
+l=sc.nextInt();
+t=sc.nextInt();
+while(t!=0)
+{
+t=t-1;
+w=sc.nextInt();
+h=sc.nextInt();
+if((w<l)||(h<l))
+System.out.println("UPLOAD ANOTHER");
+else if((w>=l)&&(h>=l))
+{
+  if(w==h)
+  System.out.println("ACCEPTED");
+  else
+  System.out.println("CROP IT");
+}}}}

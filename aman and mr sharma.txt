@@ -1,0 +1,21 @@
+import java.util.*;
+class a
+{
+public static void main(String args[])
+{
+int t,x;
+int r,dis;
+Scanner sc=new Scanner(System.in);
+t=sc.nextInt();
+int count=0;
+while(t!=0)
+{
+t=t-1;
+r=sc.nextInt();
+x=sc.nextInt();
+if((700*x)>=(44*r))
+{
+    count++;
+}}
+System.out.println(count);
+}}

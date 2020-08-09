@@ -1,0 +1,18 @@
+import java.io.*;
+class a
+{
+public static void main(String args[])throws IOException
+{
+int t,x,y;
+BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+t=Integer.parseInt(br.readLine());
+x=Integer.parseInt(br.readLine());
+while(t!=0)
+{
+t=t-1;
+y=Integer.parseInt(br.readLine());
+if(y<x)
+System.out.println("NO");
+else
+System.out.println("YES");
+}}}

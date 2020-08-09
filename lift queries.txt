@@ -1,0 +1,31 @@
+import java.io.*;
+import java.lang.*;
+class a
+{
+public static void main(String args[])throws Exception
+{
+BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+int t,f,a=0,b=7;
+t=Integer.parseInt(br.readLine());
+while(t!=0)
+{
+t=t-1;
+f=Integer.parseInt(br.readLine());
+if((f-a)<=(b-f))
+{
+    System.out.println("A");
+    a=a+(f-a);
+}
+else
+{
+    System.out.println("B");
+    b=b-(b-f);
+}
+}
+}}
+
+
+
+
+
+

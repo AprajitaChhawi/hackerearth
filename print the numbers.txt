@@ -1,0 +1,15 @@
+import java.util.*;
+class A
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int t=sc.nextInt();
+        while(t!=0)
+        {
+            t--;
+            int a=sc.nextInt();
+            System.out.print(a+" ");
+        }
+     }
+}

@@ -1,0 +1,23 @@
+import java.io.*;
+class a
+{
+public static void main(String args[])throws IOException
+{
+String a;
+int i;
+int x=0,y=0;
+BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+a=br.readLine();
+char[] b=a.toCharArray();
+for(i=0;i<b.length;i++)
+{
+switch(b[i])
+{
+case 'L':x=x-1;break;
+case 'R':x=x+1;break;
+case 'U':y=y+1;break;
+case 'D':y=y-1;break;
+}
+}
+System.out.println(""+x+" "+y);
+}}

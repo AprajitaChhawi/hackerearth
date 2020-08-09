@@ -1,0 +1,37 @@
+import java.util.*;
+class a
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+int t,a,num=0,f;
+t=sc.nextInt();
+while(t!=0)
+{
+    t=t-1;
+ a=sc.nextInt();
+int temp=a%12;
+switch(temp)
+{
+case 0:num=a-11;break;
+case 1:num=a+11;break;
+case 2:num=a+9;break;
+case 3:num=a+7;break;
+case 4:num=a+5;break;
+case 5:num=a+3;break;
+case 6:num=a+1;break;
+case 7:num=a-1;break;
+case 8:num=a-3;break;
+case 9:num=a-5;break;
+case 10:num=a-7;break;
+case 11:num=a-9;break;
+}
+System.out.print(num+" ");
+if((temp==1)||(temp==6)||(temp==7)||(temp==0))
+System.out.println("WS");
+else if((temp==2)||(temp==5)||(temp==8)||(temp==11))
+System.out.println("MS");
+else
+System.out.println("AS");
+}}}
+Language: Java

@@ -1,0 +1,16 @@
+import java.io.*;
+class Main
+{
+public static void main(String args[])throws IOException
+{
+int t,i,f;
+long fact=1;
+BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+t=Integer.parseInt(br.readLine());
+for(i=1;i<=t;i++)
+{
+fact=fact*i;
+}
+f=(int)fact;
+System.out.print(f);
+}}

@@ -1,0 +1,36 @@
+import java.io.*;
+import java.util.*;
+class a
+{
+public static void main(String args[])throws Exception
+{
+Scanner sc=new Scanner(System.in);
+int t,i;
+String s,p,q,r;
+t=sc.nextInt();
+while(t!=0)
+{
+ t=t-1;
+s=sc.next();
+p=sc.next();
+char[] a=s.toCharArray();
+char[] b=p.toCharArray();
+if(a.length==b.length)
+{
+Arrays.sort(a);
+Arrays.sort(b);
+q=new String(a);
+r=new String(b);
+if(q.equals(r))
+System.out.println("YES");
+else
+System.out.println("NO");
+}
+else
+{System.out.println("NO");
+}}}}
+
+
+
+
+
