@@ -1,0 +1,32 @@
+def eval(s1,s2):
+    if(s1==s2):print('draw')
+    if(s1>s2):print('first')
+    if(s1<s2):print('second')
+try:
+    t=int(input())
+    for i in range(t):
+        n=int(input())
+        arr=list(map(int,input().split()))
+        arr=sorted(arr,reverse=True)
+        if(n==1):
+            print('first')
+            continue
+        if(n==2):
+            eval(arr[0],arr[1])
+            continue
+        if(n==3):
+            eval(arr[0],arr[1]+arr[2])
+            continue
+        s1=arr[0]+arr[3]
+        s2=arr[1]+arr[2]
+        if(n==4):
+            eval(s1,s2)
+            continue
+        if(n==5):
+            eval(s1,s2+arr[4])
+            continue
+        if(n>5):
+            s1+=sum(arr[5:n:2])
+            s2+=sum(arr[4:n:2])
+            eval(s1,s2)
+except:pass;
